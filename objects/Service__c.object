@@ -197,4 +197,112 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Type_Of_Vehicle__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Of Vehicle</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2 Wheeler</fullName>
+                    <default>false</default>
+                    <label>2 Wheeler</label>
+                </value>
+                <value>
+                    <fullName>4 Wheeler</fullName>
+                    <default>false</default>
+                    <label>4 Wheeler</label>
+                </value>
+                <value>
+                    <fullName>6 Wheeler</fullName>
+                    <default>false</default>
+                    <label>6 Wheeler</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Company__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle Company</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_Of_Vehicle__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Maruthi</fullName>
+                    <default>false</default>
+                    <label>Maruthi</label>
+                </value>
+                <value>
+                    <fullName>Honda</fullName>
+                    <default>false</default>
+                    <label>Honda</label>
+                </value>
+                <value>
+                    <fullName>Bajaj</fullName>
+                    <default>false</default>
+                    <label>Bajaj</label>
+                </value>
+                <value>
+                    <fullName>Toyato</fullName>
+                    <default>false</default>
+                    <label>Toyato</label>
+                </value>
+                <value>
+                    <fullName>Yamaha</fullName>
+                    <default>false</default>
+                    <label>Yamaha</label>
+                </value>
+                <value>
+                    <fullName>Ashok Leyland</fullName>
+                    <default>false</default>
+                    <label>Ashok Leyland</label>
+                </value>
+                <value>
+                    <fullName>Eicher</fullName>
+                    <default>false</default>
+                    <label>Eicher</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>2 Wheeler</controllingFieldValue>
+                <controllingFieldValue>4 Wheeler</controllingFieldValue>
+                <valueName>Honda</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2 Wheeler</controllingFieldValue>
+                <valueName>Bajaj</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2 Wheeler</controllingFieldValue>
+                <valueName>Yamaha</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4 Wheeler</controllingFieldValue>
+                <valueName>Maruthi</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4 Wheeler</controllingFieldValue>
+                <valueName>Toyato</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6 Wheeler</controllingFieldValue>
+                <valueName>Ashok Leyland</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6 Wheeler</controllingFieldValue>
+                <valueName>Eicher</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
 </CustomObject>
